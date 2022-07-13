@@ -1,0 +1,21 @@
+<div class='main'>
+<h2>New Article Form</h2>
+
+<%= form_for @article do |f| %>
+<label>Name : </label><br>
+<%= f.text_field :name %><br>
+
+<label>Description : </label><br>
+<%= f.text_field :description %><br>
+
+<label>Teacher who was at the excursion : </label><br>
+<%= f.text_field :teacher_id %><br>
+
+<%= f.submit 'Create Article' %>
+<% end %>
+
+</div>
+
+
+
+

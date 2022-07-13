@@ -1,0 +1,17 @@
+<div class='main'>
+<h2>Update Article Form</h2>
+
+<%= form_for @article do |f| %>
+<label>Name : </label><br>
+<%= f.text_field :name %><br>
+
+<label>Description   : </label><br>
+<%= f.text_field :description %><br>
+
+<label>Which teacher was there ?  : </label><br>
+<%= f.text_field :teacher_id %><br>
+
+<%= f.submit 'Update Article' %>
+
+<%end%>
+</div>

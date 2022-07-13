@@ -1,0 +1,9 @@
+<div class='main'>
+<h1><%= @article.name %></h1>
+
+<h2><%= @article.description %></h2>
+<h2>Teacher present at the excursion :  </h2>
+<h2>- <%= Teacher.find_by(id: @article.teacher_id).name %>, id : <%= Teacher.find_by(id: @article.teacher_id).article_id %></h2>
+
+<button><%= link_to 'Back', :back %></button>
+</div>

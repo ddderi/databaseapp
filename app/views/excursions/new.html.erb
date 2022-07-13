@@ -1,0 +1,20 @@
+<div class='main'>
+<h2>New excursion Form</h2>
+
+<%= form_for @excursion do |f| %>
+<label>Article id : </label><br>
+<%= f.text_field :article_id %><br>
+
+
+<label>Student id : </label><br>
+<%= f.text_field :student_id %><br>
+
+<label>Excursion date : </label><br>
+<%= f.time_field :excursion_date %><br>
+
+
+
+<%= f.submit 'Create excursion' %>
+
+<%end%>
+</div>

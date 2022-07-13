@@ -1,0 +1,23 @@
+<div class='main'>
+<h2>New Student Form</h2>
+
+<%= form_for @student do |f| %>
+<label>Name : </label><br>
+<%= f.text_field :name %><br>
+
+<%= f.submit 'Create Student' %>
+
+<%end%>
+</div>
+<%# <h2>New Student Form</h2> %>
+<%# %>
+<%# <%= form_for @student do |f| %>
+<%# <label>Name : </label><br>%>
+<%# <%= f.text_field :name %>
+<%# %>
+<%# <label>in Which excursion @student.name was there ? : </label><br>%>
+<%# <%= f.input_field :article_id %>
+<%# %>
+<%# <%= f.submit 'Create Student' %> 
+<%# %>
+<%# <%end%>

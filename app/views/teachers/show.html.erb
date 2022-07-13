@@ -1,0 +1,16 @@
+<div class='main'>
+<h1><%= @teacher.name %></h1>
+<h2><%= "in Which excursions #{@teacher.name} went ?" %></h2>
+
+<% if Article.where("teacher_id = ?", @teacher.id).length > 0  %>
+<% Article.where("teacher_id = ?", @teacher.id).each do |excursion| %>
+<h4><ul>
+   <li> <%= excursion.name %> </li> 
+   </ul></h4>
+  <% end %>
+  <% else %>
+  <h4> <%=  "#{@teacher.name} hasn't done any excursion yet !" %> </h4>
+  <% end %>
+
+<button><%= link_to 'Back', :back %></button>
+</div>

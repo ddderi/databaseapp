@@ -1,0 +1,12 @@
+<div class='main'>
+<h2>New Teacher Form</h2>
+
+<%= form_for @teacher do |f| %>
+<label>Name : </label><br>
+<%= f.text_field :name %><br>
+
+
+<%= f.submit 'Create Teacher' %>
+
+<%end%>
+</div>

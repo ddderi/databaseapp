@@ -1,0 +1,7 @@
+<div class='main'>
+<% @excursions.each do |excursion| %>
+<h1><%= link_to "#{excursion.article.name} | #{excursion.excursion_date}", excursion_path(excursion)%></h1>
+
+<% end %>
+<button> <%= link_to "Create a new excursion", "/excursions/new" %> </button>
+</div>

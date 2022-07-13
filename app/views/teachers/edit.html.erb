@@ -1,0 +1,14 @@
+<div class='main'>
+<h2>Update Teacher Form</h2>
+
+<%= form_for @teacher do |f| %>
+<label>Name : </label><br>
+<%= f.text_field :name %><br>
+
+<label>Article id  : </label><br>
+<%= f.text_field :article_id %><br>
+
+<%= f.submit 'Update Teacher' %>
+
+<%end%>
+</div>
